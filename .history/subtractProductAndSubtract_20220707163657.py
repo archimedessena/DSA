@@ -26,7 +26,6 @@ class Solution:
         return prod - sum
     
     
-
 class Solution:
     def subtractProductAndSum(self, n: int) -> int:
         arr = list(map(int, str(n)))
