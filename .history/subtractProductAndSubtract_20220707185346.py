@@ -27,6 +27,8 @@ class Solution:
         return prod - sum
     
     
+
+
 test = Solution()
 test1 = test.subtractProductAndSum(5678)
 print(test1)

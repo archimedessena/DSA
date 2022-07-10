@@ -20,14 +20,19 @@ class Solution:
         sum, prod = 0, 1
         while n:
             digit = n % 10
-            print(digit)
             sum += digit
             prod *= digit
             n //= 10
         return prod - sum
     
     
+
+
 test = Solution()
 test1 = test.subtractProductAndSum(5678)
-print(test1)
+print()
 
+# class Solution:
+#     def subtractProductAndSum(self, n: int) -> int:
+#         arr = list(map(int, str(n)))
+#         return prod(arr)-sum(arr)
