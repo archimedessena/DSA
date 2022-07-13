@@ -17,14 +17,13 @@
 
 class Solution:
     def product_sum_subtract(self, n):
-        sum = 0
-        product = 1   
-        while n:
+       sum = 0
+       product = 1   
+       while n:
            num = n % 10   
            sum += num    
            product *= num  
-           n //= 10  
-        return product - sum
+           n //= 
     
 
 test = Solution()
