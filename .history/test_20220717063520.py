@@ -43,7 +43,7 @@ def arithmetic_progression(arr):
     min_ = min(arr)
     diff_ = (max_ - min_) / (len(arr) - 1)
     if diff_ == 0: return True    
-    s = set(num - min_ for num in arr)
+    #s = set(num - min_ for num in arr)
     print(s)
     return len(s) == len(arr) and all(diff % diff_ == 0 for diff in s)
 

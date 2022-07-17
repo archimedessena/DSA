@@ -26,29 +26,6 @@
 
 
 # Pseudocode 
-# 1. Sort array 
-# 2. Check if the difference in the consecutive elements is the same
+# 1. Search for the smallest number of element in the arr
+# 2.
 
-arr1 = [2, 4,23, 32, 10, 1]
-arr2 = [2, 6, 4, 8, 10]
-arr3 = [1, 3, 5, 9, 11, 15, 13, 7]
-
-class Solution:
-    def canMakeArithmeticProgression(self, arr) -> bool:
-        m = min(arr)
-        print(m)
-        print(max(arr))
-        gap = (max(arr) - m) / (len(arr) - 1)
-        print(gap)
-        if gap == 0: return True
-        s = set(num - m for num in arr)
-        print(s)
-        return len(s) == len(arr) and all(diff % gap == 0 for diff in s)
-    
-    
-    
-    
-soln = Solution()
-print(soln.canMakeArithmeticProgression(arr3))  
-    
-    

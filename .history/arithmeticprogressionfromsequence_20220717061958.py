@@ -31,7 +31,8 @@
 
 arr1 = [2, 4,23, 32, 10, 1]
 arr2 = [2, 6, 4, 8, 10]
-arr3 = [1, 3, 5, 9, 11, 15, 13, 7]
+
+arr3 = [1,3,]
 
 class Solution:
     def canMakeArithmeticProgression(self, arr) -> bool:
@@ -49,6 +50,6 @@ class Solution:
     
     
 soln = Solution()
-print(soln.canMakeArithmeticProgression(arr3))  
+print(soln.canMakeArithmeticProgression(arr2))  
     
     
