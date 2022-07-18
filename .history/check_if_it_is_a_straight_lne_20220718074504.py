@@ -5,13 +5,13 @@
 # Output: true
 
 
-def checkStraightLine(coordinates) -> bool:
+def checkStraightLine(self, coordinates) -> bool:
         (x0, y0), (x1, y1) = coordinates[: 2]
-        print(coordinates)
         for x, y in coordinates:
+                print(coordinates)
                 if (x1 - x0) * (y - y1) != (x - x1) * (y1 - y0):
-                        return True
-        return False
+                        return False
+        return True
     
     
 

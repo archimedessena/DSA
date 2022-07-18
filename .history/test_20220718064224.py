@@ -37,13 +37,12 @@
 
 # 5. Create a set to return the numbers     
 
-def arithmetic_progression(arr):
+def arithmetic progression(arr):
     min_ = min(arr)
     max_ = max(arr)
-    diff_ = (max_ - min_) / (len(arr) - 1) 
+    diff_ = (max_ - min_) - (len(arr) - 1) 
     if diff_ == 0: return True     
-    set_ = set(num - min_ for num in arr)   
-    return len(set_) == len(arr) and all(diff % diff_ == 0 for diff in set_)
+    set_ = 
     
 
 
