@@ -39,8 +39,11 @@
 
 def arithmetic_progression(arr):
     min_ = min(arr)
+    print(min_)
     max_ = max(arr)
+    print(max_)
     diff_ = (max_ - min_) / (len(arr) - 1) 
+    print(diff_)
     if diff_ == 0: return True     
     set_ = set(num - min_ for num in arr)   
     return len(set_) == len(arr) and all(diff % diff_ == 0 for diff in set_)
@@ -48,4 +51,8 @@ def arithmetic_progression(arr):
 
 
 arr3 = [1, 3, 5, 9, 11, 15, 13, 7]
+
 print(arithmetic_progression(arr3))
+
+arr4 = [2, 4, 6, 8, 10, 12, 14, 17]
+print(arithmetic_progression(arr4))
