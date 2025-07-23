@@ -320,5 +320,8 @@ first = nest_Array[2][2]
 
 
 arr_= [2, 3, 4, 5]
-arr_.extend([35, 456])
+arr_.extend([35, 456, 5, 3, 6, 5, 5, 4])
+arr_.append(300)
 print(arr_)
+
+print(arr_.count(5))
